@@ -8,7 +8,7 @@ import { droplet } from "react-icons-kit/feather/droplet";
 import { wind } from "react-icons-kit/feather/wind";
 import { activity } from "react-icons-kit/feather/activity";
 import { useDispatch, useSelector } from "react-redux";
-import { get5DaysForecast, getCityData } from "./Store/Slices/WeatherSlice.js";
+import { get5DaysForecast, getCityData } from "./Store/Slices/Weather.js";
 import { SphereSpinner } from "react-spinners-kit";
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
   }, [allLoadings]);
 
   // city state
-  const [city, setCity] = useState("Kathmandu");
+  const [city, setCity] = useState("queens");
 
   // unit state
   const [unit, setUnit] = useState("metric"); // metric = C and imperial = F

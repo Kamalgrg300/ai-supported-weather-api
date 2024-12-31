@@ -32,7 +32,7 @@
   margin: 0 auto;
   overflow-y: auto;
   box-shadow: 0 0 20px red;
-  padding: 15px;
+  padding: 120px;
   opacity: 75%;
 }
 
@@ -83,7 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2fa5ed;
+  color: red;
 }
 
 .box form .city-input {
@@ -101,7 +101,7 @@
   border: none;
   outline: none;
   background-color: #fff;
-  color: #2fa5ed;
+  color: #1ec745;
   width: 75px;
   cursor: pointer;
 }
@@ -126,14 +126,14 @@
 }
 
 .details-box-header h4 {
-  color: #a09aa0;
+  color: #1ec745;
 }
 
 /* switch */
 .details-box-header .switch {
   width: 80px;
   height: 32px;
-  background-color: #2fa5ed;
+  background-color: #1ec745;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -240,7 +240,7 @@
 
 /* details children */
 .weather-details-container .details .city-name {
-  color: #2fa5ed;
+  color: #ff0000;
 }
 
 .weather-details-container .details .icon-and-temp {
@@ -249,7 +249,7 @@
 }
 
 .icon-and-temp h1 {
-  color: #2fa5ed;
+  color: #1b1d1e;
   font-size: 56px;
 }
 
@@ -295,7 +295,7 @@
 
 /* extended-forecasts */
 .extended-forecast-heading {
-  color: #a09aa0;
+  color: #1ec745;
   margin-top: 25px;
 }
 
@@ -308,7 +308,7 @@
   width: calc(20% - 10px);
   height: 120px;
   border-radius: 4px;
-  background-color: #2fa5ed;
+  background-color: #6694dd;
   color: #fff;
   margin-right: 10px;
   padding: 10px;

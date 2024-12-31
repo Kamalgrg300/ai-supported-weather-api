@@ -1,45 +1,45 @@
-**Task: Weather Forecast App**
+- - - Weather Forecast Application \* \* \*
 
-**Objective:** Build a weather forecast application that fetches current weather data from the OpenWeather API based on the user's location or a searched city name.
+Link:
 
-**Requirements:**
+This Weather Forecast Application is built with React and Redux Toolkit, providing users with current weather data and a 5-day forecast for any city using the OpenWeather API.
 
-1. **UI Design (CSS Modules):**
+Features
 
-   - Design a clean and visually appealing interface using CSS modules.
-   - Include:
-     - A **search bar** to input a city name.
-     - A **weather display** area that shows the temperature, weather description, and an icon.
-     - Additional details like humidity, wind speed, and forecast for the day.
+- Search City Weather: Fetch real-time weather details for any city.
+- 5-Day Weather Forecast: View extended weather forecasts with detailed metrics.
+- Unit Conversion: Toggle between Celsius and Fahrenheit.
+- Error Handling: Displays error messages for invalid inputs or API issues.
+- Loading States: Visual indication when fetching data.
 
-2. **Weather Data Fetching (API Integration with OpenWeather):**
+Application Architecture
+State Management with Redux Toolkit
 
-   - Register for an API key on the [OpenWeather API](https://openweathermap.org/api).
-   - Use the **current weather** API endpoint to fetch weather data based on city search or user location.
-   - Parse the response to display key data, such as:
-     - City name, temperature, weather description (e.g., "clear sky"), and an appropriate icon.
-     - Humidity, wind speed, and forecasted conditions.
+1. Async Actions:
 
-3. **React Functionality (useState and useEffect):**
+- getCityData: Fetches current weather data for a city.
+- get5DaysForecast: Fetches a 5-day weather forecast using city coordinates.
 
-   - Use `useState` to manage:
-     - The search input.
-     - Weather data.
-     - Loading and error states.
-   - Use `useEffect` to:
-     - Trigger the API call when a new city is searched.
-     - Optionally, get the user's current location and fetch weather data on initial load.
+2. Weather Slice:
 
-4. **Bonus (Optional):**
-   - Add a **5-day forecast** display.
-   - Implement **unit switching** between Celsius and Fahrenheit.
+- citySearchLoading: Indicates loading state for city weather search.
+- citySearchData: Stores city weather data.
+- forecastLoading: Indicates loading state for the forecast.
+- forecastData: Stores 5-day forecast data.
+- forecastError: Stores error messages from the forecast API.
 
-**Deliverables:**
+FOLDER STRUCTURE
+src/
+├── Store/
+│ └── Slices/
+│ └── Weather.js # Handles weather-related actions and state
+├── config/ # API configuration
+├── App.js # Main React component
+└── index.js # React DOM rendering
 
-- A GitHub repository link to the project.
-- A README.md file with instructions on setup, API key configuration, and app features.
+Technologies Used
 
-
-
-install items
-- npm i get-google-fonts
+1. React: Component-based UI framework.
+2. Redux Toolkit: Simplified state management.
+3. Axios: HTTP client for API requests.
+4. OpenWeather API: Weather data provider.
