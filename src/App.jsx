@@ -8,7 +8,7 @@ import { droplet } from "react-icons-kit/feather/droplet";
 import { wind } from "react-icons-kit/feather/wind";
 import { activity } from "react-icons-kit/feather/activity";
 import { useDispatch, useSelector } from "react-redux";
-import { get5DaysForecast, getCityData } from "./Store/Slices/Weather.js";
+import { get5DaysForecast, getCityData } from "./components/Slices/Weather.js";
 import { SphereSpinner } from "react-spinners-kit";
 
 function App() {
