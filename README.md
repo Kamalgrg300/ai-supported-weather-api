@@ -1,6 +1,7 @@
 - - - Weather Forecast Application - - -
 
 Github Link: https://github.com/Kamalgrg300/ai-supported-weather-api.git
+Live website: https://ai-supported-weather-api.vercel.app/
 
 This Weather Forecast Application is built with React and Redux Toolkit, providing users with current weather data and a 5-day forecast for any city using the OpenWeather API.
 
